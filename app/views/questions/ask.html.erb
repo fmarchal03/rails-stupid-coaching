@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Stupid Coaching</h1>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <%= form_tag(answer_path, method: "get", class: "d-flex flex-column align-items-center") do %>
+        <div class="form-group w-100">
+          <%= label_tag :question, "Ask your coach anything:", class: "h4" %>
+          <%= text_field_tag :question, nil, class: "form-control mb-3", placeholder: "Your question" %>
+        </div>
+        <%= submit_tag "Ask", class: "btn btn-primary btn-lg w-50" %>
+      <% end %>
+    </div>
+  </div>
+</div>
